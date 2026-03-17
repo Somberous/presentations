@@ -11,6 +11,11 @@ This repository contains the slides, demos, and reusable profile snippets for my
   These are safe, pre-written examples used during the talk.
   Also includes a readme which should be viewed while running the demo.
 
+  [![Example of ReadMe View](./images/readme_preview_example.png)](./images/readme_preview_example.png)
+
+- **images/**  
+  Store for images used in the project.
+
 - **modules/**  
   Module for various live demo functions and making them work to get a point accross.
 

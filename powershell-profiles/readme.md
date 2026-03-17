@@ -6,19 +6,13 @@ This repository contains the slides, demos, and reusable profile snippets for my
 
 ## Folder Structure
 
-- **assets/**  
-  Images, diagrams, and supporting media used in slides.
-
 - **demos/**  
-  Live demo scripts organized by topic and presentation order.  
+  Live demo profiles organized by topic and presentation order.  
   These are safe, pre-written examples used during the talk.
+  Also includes a readme which should be viewed while running the demo.
 
-- **powershell-profiles/**  
-  Core working files specific to this presentation.
-
-- **profile-snippets/**  
-  Modular PowerShell profile examples.  
-  Includes structured snippets (environment setup, aliases, functions, completions, etc.) that demonstrate a clean, scalable profile design.
+- **modules/**  
+  Module for various live demo functions and making them work to get a point accross.
 
 - **slides/**  
   Slide deck and speaker notes.
@@ -29,9 +23,8 @@ This repository contains the slides, demos, and reusable profile snippets for my
 
 - Explain what PowerShell profiles are and how they load
 - Demonstrate profile scopes and paths
-- Show how to build a modular, maintainable profile
+- Show how to build a profile
 - Improve shell productivity safely
-- Cover performance and troubleshooting techniques
 
 ---
 
@@ -43,7 +36,11 @@ Open PowerShell 7+ and navigate to the `demos` directory:
 cd .\demos
 ```
 
-Run scripts in numerical order for a smooth presentation flow.
+Inside the demos directory run the below command to begin the demo:
+
+```powershell
+.\Run-Demo.ps1
+```
 
 If needed, start PowerShell without loading a profile:
 
@@ -58,5 +55,6 @@ pwsh -NoProfile
 - PowerShell 7+
 - VS Code (optional)
 - Oh My Posh (optional for prompt demonstrations)
+- ReadMe Preview Utility to view while running the demo (I have used this one in VSCode: https://marketplace.visualstudio.com/items?itemName=shd101wyy.markdown-preview-enhanced)
 
 ---
